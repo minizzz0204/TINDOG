@@ -2,23 +2,18 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-  font-family: 'Ubuntu', sans-serif;
-  font-size:3.5rem;
-  line-height: 1.5;
-  color:white;
-  /* margin:100px auto; */
-  font-weight: bolder;
-}
-
-h2{
+h1, h2, h3, h4, h5, h6{
   font-family: "Montserrat-Bold";
   font-size: 3rem;
   line-height: 1.5;
 }
 
+h2{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 h3{
-  font-family: "Montserrat-Bold";
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -27,13 +22,35 @@ p{
   color: grey;
 }
 
+/* headings */
+.big-heading{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.5rem;
+  line-height: 1.5;
+  color:white;
+  /* margin:100px auto; */
+  font-weight: bolder;
+}
+
 #title{
   background-color: #ff4c68;
   color: #fff;
 }
 
+/* Title image */
+.title-image{
+  width:20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
+}
+
+/* features */
 #features{
   padding:7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-content{
@@ -50,11 +67,13 @@ p{
   color:#ff4c68;
 }
 
-.container-fluid{
-  padding:3% 15%;
-}
 
 /* Navigation Bar */
+
+.container-fluid{
+  padding:3% 15% 7%;
+}
+
 .navbar-brand{
   font-family: "Ubuntu";
   font-size: 2.5rem;
@@ -74,16 +93,13 @@ p{
   font-family: "Montserrat-light";
 }
 
+
 /* download buttons */
 .download-button{
   margin:5% 3% 5% 0;
 }
 
-/* Title image */
-.title-image{
-  width:40%;
-  transform: rotate(25deg);
-}
+
 
 /* testimonial section */
 #testimonials{
@@ -115,8 +131,15 @@ p{
   margin:20px 20px 50px;
 }
 
+/* pricing */
+
 #pricing{
   padding:5% 15%;
+}
+
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-text{
@@ -127,13 +150,33 @@ p{
   padding: 3% 2%;
 }
 
+@media (max-width : 1028px){
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* cta */
+
 #cta{
   text-align:center;
   background-color: #ff4c68;
+  color: #fff;
   padding: 1% 2%;
 }
 
+/* footer */
+
 #footer{
-  background-color: #ff4c68;
+  background-color: #fff;
   text-align:center;
+}
+
+.footer-icon{
+  margin:5% 1%;
+  width:20%;
 }
